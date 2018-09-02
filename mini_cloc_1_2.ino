@@ -8,7 +8,7 @@ ver.1.1 - small changes by Nicu FLORICA (niq_ro) - 14.12.2017, Craiova - Romania
 http://www.arduinotehniq.com
 https://nicuflorica.blogspot.com/
 https://arduinotehniq.blogspot.com/
-ver.1.2 - add alarm, 2 september 2017, Galiciuica - Romania
+ver.1.2 - add alarm, 2 september 2018, Galiciuica - Romania
 ***********************************************************************/
 
 //include libraries:
