@@ -4,8 +4,11 @@ Distributed under the terms of the GPL.
 For help on how to build the clock see my blog:
 http://123led.wordpress.com/
 Tested on IDE v1.6.5 
-small changes by Nicu FLORICA (niq_ro) - 14.12.2017, Craiova - Romania
-http://www.tehnic.go.ro
+ver.1.1 - small changes by Nicu FLORICA (niq_ro) - 14.12.2017, Craiova - Romania
+http://www.arduinotehniq.com
+https://nicuflorica.blogspot.com/
+https://arduinotehniq.blogspot.com/
+ver.1.2 - add alarm, 2 september 2017, Galiciuica - Romania
 ***********************************************************************/
 
 //include libraries:
