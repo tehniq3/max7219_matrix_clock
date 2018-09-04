@@ -11,6 +11,7 @@ https://arduinotehniq.blogspot.com/
 ver.1.2 - add alarm, 2 september 2018, Galiciuica - Romania
 ***********************************************************************/
 
+
 //include libraries:
 #include "LedControl.h"
 #include <FontLEDClock.h>                // Font library
@@ -127,6 +128,11 @@ void setup() {
 
 //dht.begin();
 
+al[0] = EEPROM.read(adresa);  // alarm minute
+al[1] = EEPROM.read(adresa+1); // hour minute
+alarm_mode = EEPROM.read(adresa+2); // alarm state
+intensity = EEPROM.read(adresa+3); // intensity of displat 0-7
+
   //Setup DS1307 RTC
 #ifdef AVR
   Wire.begin();
@@ -155,11 +161,11 @@ al[0] = 15; // alarm minutes
 EEPROM.write(adresa,15); // alarm minute
 EEPROM.write(adresa+1,7); // alarm hour
 EEPROM.write(adresa+2,0); // alarm state
+EEPROM.write(adresa+3,3); // intensity of display
 */
 
-al[0] = EEPROM.read(adresa);  // alarm minute
-al[1] = EEPROM.read(adresa+1); // hour minute
-alarm_mode = EEPROM.read(adresa+2); // alarm state
+
+
 }
 
 void loop() {
@@ -1710,7 +1716,7 @@ void set_time() {
 
   EEPROM.write(adresa,al[0]); // alarm minute
   EEPROM.write(adresa+1,al[1]); // alarm hour
-  
+  EEPROM.write(adresa+3,intensity); // display intensity7 
   cls();
 }
 
@@ -1844,7 +1850,7 @@ if ((al[1] == rtc[2]) and (al[0] == rtc[1]))
   digitalWrite(ledalarma, HIGH);
   delay(150);
   digitalWrite(ledalarma, LOW);
-  delay(250);
+  delay(350);
 
 
   //check for button press
