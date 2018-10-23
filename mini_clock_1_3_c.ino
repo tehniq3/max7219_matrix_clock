@@ -105,8 +105,8 @@ int zhas, uhas;
 int te0, zte, ute, ste;
 
 int b = 0;
-int bmax = 600; //1500;  // 1000 = aprox 6 sec
-int amax = 80; // 40;    // 20 = 1 sec
+int bmax = 1500;  // 1000 = aprox 6 sec
+int amax = 40;    // 20 = 1 sec
 
 
 void setup() {
