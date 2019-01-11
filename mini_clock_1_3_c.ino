@@ -1327,7 +1327,7 @@ byte spatiu = 8;
   puttinychar(suffixposx+offset+spatiu, 1, suffix[s][0]); 
   puttinychar(suffixposx+4+offset+spatiu, 1, suffix[s][1]); 
 */
- if (date > 10) 
+ if (date >= 10) 
   {
   putnormalchar(4, 1, buffer[0]);
   putnormalchar(10, 1, buffer[1]);
